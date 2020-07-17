@@ -18,6 +18,8 @@ export class AdminService {
   ) {}
 
   parseJwt(token: string): any {
+    if (!token) return {}
+
     const base64Url: string = token.split('.')[1];
     const base64: string = base64Url.replace('-', '+').replace('_', '/');
 

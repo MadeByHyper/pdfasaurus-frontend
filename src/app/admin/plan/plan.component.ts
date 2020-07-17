@@ -37,10 +37,12 @@ export class PlanComponent implements OnInit {
   ) { }
 
   startPlan() {
-    Paddle.Checkout.open({
-      email: this.email,
-      product: PRODUCT_ID,
-    });
+    if (Paddle) {
+      Paddle.Checkout.open({
+        email: this.email,
+        product: PRODUCT_ID,
+      });
+    }
   }
 
   changePlan() {
@@ -83,24 +85,26 @@ export class PlanComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    Paddle.Setup({
-      vendor: VENDOR_ID,
-      eventCallback: (data) => {
-        console.log(data.event);
-        console.log(data.eventData);
+    if (Paddle) {
+      Paddle.Setup({
+        vendor: VENDOR_ID,
+        eventCallback: (data) => {
+          console.log(data.event);
+          console.log(data.eventData);
 
-        switch (data.event) {
-          case "Checkout.PaymentComplete":
-            this.fetchSubscription();
-          case "Checkout.Close":
-            this.fetchSubscription();
-            break;
-          case "Checkout.Complete":
-            this.fetchSubscription();
-            break;
+          switch (data.event) {
+            case "Checkout.PaymentComplete":
+              this.fetchSubscription();
+            case "Checkout.Close":
+              this.fetchSubscription();
+              break;
+            case "Checkout.Complete":
+              this.fetchSubscription();
+              break;
+          }
         }
-      }
-    });
+      });
+    }
 
     this.fetchSubscription();
   }
