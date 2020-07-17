@@ -1,0 +1,65 @@
+nav {
+  padding-top: 45px;
+}
+
+nav .breadcrumb {
+  background: transparent;
+  padding-left: 0px;
+}
+
+nav .breadcrumb li.breadcrumb-item {
+  font-size: 13px;
+}
+
+nav .breadcrumb li.breadcrumb-item a {
+  color: #00a98f;
+}
+
+nav .breadcrumb li.breadcrumb-item.active {
+  color: #21262A;
+}
+
+h1, h2, h4 {
+  font-weight: 500;
+  color: #21262A;
+}
+
+input.h2 {
+  padding-top: 15px;
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #ACB5BD;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  align-items: center;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.feather {
+  width: 14px;
+  height: 14px;
+  vertical-align: text-bottom;
+}
+
+.row {
+  align-items: flex-start;
+}

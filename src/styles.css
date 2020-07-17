@@ -1,0 +1,54 @@
+
+
+* {
+  font-family: 'Karla', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+pre, code, code span {
+  font-family: monospace !important;
+}
+
+.alert {
+  font-size: 14px;
+}
+
+.alert.alert-success {
+  background-color: #05A78E;
+  color: white;
+  border: none;
+}
+
+.alert.alert-danger {
+  background-color: #ff4f81;
+  color: white;
+  border: none;
+}
+
+.underline-small {
+  box-shadow: inset 0px -5px 0 #b84592, inset 0 -5px 0 #b84592;
+}
+
+.underline-medium {
+  box-shadow: inset 0px -5px 0 #CFD4D9, inset 0 -12px 0 #CFD4D9;
+}
+
+.CodeMirror {
+  height: max-content !important;
+  min-height: 500px;
+}
+
+.CodeMirror pre,
+.CodeMirror code,
+.CodeMirror span,
+.CodeMirror code span,
+.CodeMirror-line  {
+  font-family: monospace !important;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #F0F3F5 !important;
+}
