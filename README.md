@@ -1,4 +1,16 @@
-# pdfasaurus
+<p align="center">
+  <a href="http://pdfasaurus" target="blank"><img src="https://pdfasaurus.com/assets/logo.svg" width="320" alt="PDFasaurus Logo" /></a>
+</p>
+
+## Some notes!
+
+- The repos on here only serve as a "code HQ"
+- Feel free to submit pull requests
+- No dinosaurs were harmed during the making of this software
+
+For any support stuff, send to [support@pdfasaurus.com](mailto:support@pdfasaurus.com)
+
+## Build notes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
