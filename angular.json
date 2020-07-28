@@ -23,7 +23,7 @@
               "src/favicon.ico",
               "src/favicon.png",
               "src/assets",
-              "src/_redirect"
+              "src/_redirects"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -93,7 +93,7 @@
               "src/favicon.ico",
               "src/favicon.png",
               "src/assets",
-              "src/_redirect"
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.css"
