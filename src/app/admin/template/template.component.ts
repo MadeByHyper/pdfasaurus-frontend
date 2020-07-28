@@ -16,7 +16,7 @@ import { API_PATH } from '../../constants';
 })
 export class TemplateComponent implements OnInit {
   content: string = "";
-  templateValues: string = "{}";
+  templateValues: string = "{\"name\":\"Blue dino\"}";
   uuid:string;
   name:string;
   error: string;
