@@ -17,7 +17,6 @@ export class DashboardComponent implements OnInit {
   public barChartOptions: ChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
-    // We use these empty structures as placeholders for dynamic theming.
     scales: { xAxes: [{}], yAxes: [{}] },
     plugins: {
       datalabels: {
@@ -26,17 +25,12 @@ export class DashboardComponent implements OnInit {
       }
     }
   };
-  /* public barChartLabels: Label[] = [
-    '12/06/2006', '12/06/2007', '12/06/2008', '12/06/2009', '12/06/2010', '12/06/2011', '12/06/2012','12/06/2006', '12/06/2007', '12/06/2008', '12/06/2009', '12/06/2010', '12/06/2011', '12/06/2012',
-    '12/06/2006', '12/06/2007', '12/06/2008', '12/06/2009', '12/06/2010', '12/06/2011', '12/06/2012','12/06/2006', '12/06/2007', '12/06/2008', '12/06/2009', '12/06/2010', '12/06/2011', '12/06/2012',
-  ]; */
   public barChartLabels: Label[] = [];
   public barChartType: ChartType = 'bar';
   public barChartLegend = false;
   public barChartPlugins = [pluginDataLabels];
   public barChartData: ChartDataSets[] = [
     {
-      //data: [28, 48, 40, 19, 86, 27, 90, 28, 48, 40, 19, 86, 27, 90,28, 48, 40, 19, 86, 27, 90, 28, 48, 40, 19, 86, 27, 90],
       data: [],
       label: 'API Requests',
       backgroundColor: '#21262A',

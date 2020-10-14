@@ -79,12 +79,13 @@ export class TemplateComponent implements OnInit {
     return result;
   }
 
- isJsonString(str) {
+  isJsonString(str) {
     try {
-        JSON.parse(str);
+      JSON.parse(str);
     } catch (e) {
-        return false;
+      return false;
     }
+
     return true;
   }
 
