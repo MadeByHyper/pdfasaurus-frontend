@@ -128,7 +128,7 @@ export class PlanComponent implements OnInit {
     this.adminService
       .getSubscription(userId, token)
       .subscribe((res: any) => {
-        const { lastPaymentDate, plan, email, balance, cancelUrl, updateUrl } = res;
+        const { lastPaymentDate, nextBillDate, plan, email, balance, cancelUrl, updateUrl } = res;
 
         // This is the old custom method
         this.nextBillingDate = lastPaymentDate ? moment(lastPaymentDate).add(1, 'month').format("DD MMM YYYY") : 'unavailable';
