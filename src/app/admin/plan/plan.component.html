@@ -27,7 +27,7 @@
   <img src="../../../assets/fossil.svg" height="300" />
   <div class="plan">{{plan}} {{plan == 1 ? "fossil" : "fossils"}}</div>
   <div class="amount">{{requests}} api requests for ${{dollarFossilValue * plan}} per month</div>
-  <div class="renewal">Next billing date is {{nextBillingDate}}</div>
+  <div class="renewal">Next billing date is {{nextBillDate}}</div>
   <div class="row upgrade-row">
 
     <div class="api-button" (click)="decrease()">

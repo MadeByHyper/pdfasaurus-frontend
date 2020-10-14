@@ -20,6 +20,7 @@ export class PlanComponent implements OnInit {
   error: string;
   notification: string;
   nextBillingDate: string;
+  nextBillDate: string;
   plan: number;
   dollarFossilValue: number = DOLLAR_FOSSIL_VALUE;
   requests: number;
@@ -129,7 +130,11 @@ export class PlanComponent implements OnInit {
       .subscribe((res: any) => {
         const { lastPaymentDate, plan, email, balance, cancelUrl, updateUrl } = res;
 
+        // This is the old custom method
         this.nextBillingDate = lastPaymentDate ? moment(lastPaymentDate).add(1, 'month').format("DD MMM YYYY") : 'unavailable';
+
+        // This is using Paddle (better)
+        this.nextBillDate = moment(nextBillDate).format("DD MMM YYYY");
         this.plan = plan;
         this.email = email;
         this.cancelUrl = cancelUrl;
