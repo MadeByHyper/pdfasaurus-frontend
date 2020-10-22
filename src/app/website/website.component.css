@@ -77,6 +77,23 @@ a:hover {
 
 .cover-heading {
   font-size: 60px;
+  font-weight: 800;
+}
+
+.lead {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.subhead {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #008374 !important;
 }
 
 @media (min-width: 48em) {
