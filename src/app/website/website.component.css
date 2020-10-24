@@ -144,7 +144,7 @@ a:hover {
 }
 
 .api-button {
-  background: #1C5734 ;
+  background: #272C36;
   border-radius: 3px;
   flex-direction: row;
   display: flex;
@@ -158,7 +158,7 @@ a:hover {
 }
 
   .api-button:hover {
-    background: #144025 ;
+    background: #21252e;
   }
 
 .cover-container {
