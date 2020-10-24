@@ -24,7 +24,9 @@ a:hover {
  */
 
 :host {
-  background-color: #008374 !important;
+  background-color: #43905F !important;
+  background-image: url('../../assets/background.png');
+  background-size: auto 500px;
   display: -ms-flexbox;
   display: -webkit-box;
   height: 100%;
@@ -142,7 +144,7 @@ a:hover {
 }
 
 .api-button {
-  background: #046b5e ;
+  background: #1C5734 ;
   border-radius: 3px;
   flex-direction: row;
   display: flex;
@@ -156,7 +158,7 @@ a:hover {
 }
 
   .api-button:hover {
-    background: #055248 ;
+    background: #144025 ;
   }
 
 .cover-container {
