@@ -24,9 +24,9 @@ a:hover {
  */
 
 :host {
-  background-color: #43905F !important;
+  background-color: #008674;
   background-image: url('../../assets/background.png');
-  background-size: auto 500px;
+  background-size: auto 300px;
   display: -ms-flexbox;
   display: -webkit-box;
   height: 100%;
